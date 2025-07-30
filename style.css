@@ -1,0 +1,139 @@
+
+:root {
+  --transition-speed: 0.4s ease;
+
+
+  --bg-color: #fdfdfb;
+  --text-color: #1a1a1a;
+  --primary-color: #000000;
+  --accent-color: #4f46e5;
+  --subtext-color: #444;
+  --border-color: #eaeaea;
+  --font-family: 'Inter', sans-serif;
+}
+
+[data-theme='dark'] {
+
+  --bg-color: #0d1117;              
+  --text-color: #ffffff;          
+  --primary-color: #ffffff;          
+  --accent-color: #8ab4f8;         
+  --subtext-color: #bbbbbb;         
+  --border-color: #2a2a2a;         
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.header {
+  padding: 1rem 2rem;
+  background-color: var(--bg-color);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.theme-toggle-btn {
+  background: none;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+.theme-toggle-btn:hover {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: var(--subtext-color);
+}
+
+.teaser-info {
+  font-size: 1rem;
+  max-width: 600px;
+  color: var(--subtext-color);
+  margin-bottom: 1rem;
+}
+
+.teaser-tag {
+  font-size: 0.9rem;
+  color: var(--accent-color);
+}
+
+.countdown h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+#timer {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.875rem;
+  color: var(--subtext-color);
+  border-top: 1px solid var(--border-color);
+  background-color: var(--bg-color);
+  margin-top: 4rem;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .teaser-info {
+    font-size: 0.95rem;
+  }
+}
+
