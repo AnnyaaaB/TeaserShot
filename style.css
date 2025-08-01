@@ -249,3 +249,48 @@ body.dark-mode .nav-btn {
   color: #ffffff !important;
 }
 
+/* Mobile & Tablet Responsive Navbar */
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column; /* stack items */
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  .logo-container {
+    margin-bottom: 0.5rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 0;
+  }
+
+  .nav-links {
+    flex-direction: column;  /* vertical stack for mobile */
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .theme-toggle-btn {
+    margin-left: 0;          /* removin' gap on mobile */
+    margin-top: 0.5rem;
+  }
+}
+
+/* Smaller phones (≤480px) */
+@media (max-width: 480px) {
+  .header {
+    padding: 0.5rem 0;
+  }
+
+  .logo-text {
+    font-size: 1.3rem; /* slightly smaller text */
+  }
+
+  .nav-links a,
+  .nav-btn {
+    font-size: 0.9rem;
+  }
+}
