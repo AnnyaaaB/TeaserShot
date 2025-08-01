@@ -1,4 +1,4 @@
-
+/* base structure */
 :root {
   --transition-speed: 0.4s ease;
 
@@ -46,6 +46,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
 
 .logo {
   font-size: 1.75rem;
@@ -148,3 +149,103 @@ body {
   height: auto;
   object-fit: contain;
 }
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a,
+.nav-btn {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  background: none;
+  border: none;
+  color: #222; 
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-btn:hover {
+  color: #5a2d82; 
+}
+
+
+body.dark-mode .nav-links a,
+body.dark-mode .nav-btn {
+  color: #e6e6e6;
+}
+
+/*  Adding gap between “Why AntrAI” and “Theme” */
+.theme-toggle-btn {
+  margin-left: 2rem;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 50;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  justify-content: center;
+  align-items: center;
+}
+
+
+.modal-content {
+  background: #fff !important;  
+  color: #222 !important;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  color: #5a2d82;
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #555;
+}
+
+
+
+[data-theme="dark"] .header .nav-links a,
+[data-theme="dark"] .header .nav-links a:link,
+[data-theme="dark"] .header .nav-links a:visited,
+[data-theme="dark"] .header .nav-links a:active,
+[data-theme="dark"] .header .nav-btn {
+  color: #e6e6e6 !important;
+}
+
+[data-theme="dark"] .header .nav-links a:hover {
+  color: #ffffff !important;
+}
+

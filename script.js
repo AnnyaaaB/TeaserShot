@@ -36,3 +36,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+// modal functionality for "Why AntrAI?" button
+const whyBtn = document.getElementById('why-btn');
+const whyModal = document.getElementById('why-modal');
+const closeModal = document.getElementById('modal-close');
+
+whyBtn.addEventListener('click', () => {
+  whyModal.style.display = 'flex';
+  whyModal.setAttribute('aria-hidden', 'false');
+});
+
+closeModal.addEventListener('click', () => {
+  whyModal.style.display = 'none';
+  whyModal.setAttribute('aria-hidden', 'true');
+});
+
+// Closin' modal when clicking outside the content
+window.addEventListener('click', (e) => {
+  if (e.target === whyModal) {
+    whyModal.style.display = 'none';
+    whyModal.setAttribute('aria-hidden', 'true');
+  }
+});
