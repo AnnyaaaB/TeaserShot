@@ -249,48 +249,129 @@ body.dark-mode .nav-btn {
   color: #ffffff !important;
 }
 
-/* Mobile & Tablet Responsive Navbar */
+
+
+/* ===== NAVBAR BASE STYLES ===== */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  /* logo on left, menu on right */
+  padding: 1rem 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ✅ Logo stays aligned */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-img {
+  width: 48px;
+  height: 48px;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/*  Navbar items stay in a row */
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-left: auto;
+}
+
+/*  Menu links in a single line */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-links a,
+.nav-btn {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #222;
+  transition: color 0.3s ease;
+}
+
+/*  Theme button spacing */
+.theme-toggle-btn {
+  margin-left: 1.5rem;
+}
+
+/*  Forcing same layout for all screen sizes */
 @media (max-width: 1024px) {
   .header {
-    flex-direction: column; /* stack items */
-    align-items: center;
-    padding: 1rem 0;
-  }
-
-  .logo-container {
-    margin-bottom: 0.5rem;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .navbar {
-    flex-direction: column;
-    gap: 1rem;
-    margin-left: 0;
+    flex-direction: row;
+    gap: 1.5rem;
   }
 
   .nav-links {
-    flex-direction: column;  /* vertical stack for mobile */
-    align-items: center;
-    gap: 0.8rem;
-  }
-
-  .theme-toggle-btn {
-    margin-left: 0;          /* removin' gap on mobile */
-    margin-top: 0.5rem;
+    flex-direction: row;
+    gap: 1.5rem;
   }
 }
 
-/* Smaller phones (≤480px) */
+/*  Slight tweaks for phones ≤ 480px */
 @media (max-width: 480px) {
   .header {
-    padding: 0.5rem 0;
+    padding: 0.6rem 1rem;
+  }
+
+  .logo-img {
+    width: 40px;
+    height: 40px;
   }
 
   .logo-text {
-    font-size: 1.3rem; /* slightly smaller text */
+    font-size: 1.3rem;
   }
 
   .nav-links a,
   .nav-btn {
     font-size: 0.9rem;
+  }
+
+  .theme-toggle-btn {
+    margin-left: 1rem;
+  }
+}
+
+/*  Extra tiny screens (like iPhone SE ≤ 380px) */
+@media (max-width: 380px) {
+  .logo-img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .logo-text {
+    font-size: 1.1rem;
+  }
+
+  .nav-links a,
+  .nav-btn {
+    font-size: 0.85rem;
+  }
+
+  .navbar {
+    gap: 1rem;
+  }
+
+  .theme-toggle-btn {
+    margin-left: 0.8rem;
   }
 }
