@@ -251,7 +251,7 @@ body.dark-mode .nav-btn {
 
 
 
-/* ===== NAVBAR BASE STYLES ===== */
+/* navbar styles */
 .header {
   display: flex;
   align-items: center;
@@ -261,7 +261,7 @@ body.dark-mode .nav-btn {
   box-sizing: border-box;
 }
 
-/* ✅ Logo stays aligned */
+/*  Logo stays aligned */
 .logo-container {
   display: flex;
   align-items: center;
