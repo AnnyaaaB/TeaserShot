@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/TeaserShot/static/css/main.55ec3291.css",
+    "main.js": "/TeaserShot/static/js/main.4e6d7e21.js",
+    "static/js/453.16aaffc5.chunk.js": "/TeaserShot/static/js/453.16aaffc5.chunk.js",
+    "static/media/SilentCourt.png": "/TeaserShot/static/media/SilentCourt.a2a1727f974051c520cb.png",
+    "static/media/EmiTeaser.png": "/TeaserShot/static/media/EmiTeaser.09a83cbeb579cfd62d98.png",
+    "static/media/InvisibleAverage.png": "/TeaserShot/static/media/InvisibleAverage.1367f10f07c86dc7f010.png",
+    "static/media/SilentGlue.png": "/TeaserShot/static/media/SilentGlue.d3218af6615eb8d0622e.png",
+    "static/media/AntraLogo.jpeg": "/TeaserShot/static/media/AntraLogo.434395d2343991545a0c.jpeg",
+    "index.html": "/TeaserShot/index.html",
+    "main.55ec3291.css.map": "/TeaserShot/static/css/main.55ec3291.css.map",
+    "main.4e6d7e21.js.map": "/TeaserShot/static/js/main.4e6d7e21.js.map",
+    "453.16aaffc5.chunk.js.map": "/TeaserShot/static/js/453.16aaffc5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.55ec3291.css",
+    "static/js/main.4e6d7e21.js"
+  ]
+}
