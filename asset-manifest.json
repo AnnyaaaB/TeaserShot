@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/TeaserShot/static/css/main.457f63aa.css",
-    "main.js": "/TeaserShot/static/js/main.e8c9e641.js",
+    "main.css": "/TeaserShot/static/css/main.fca4a0d6.css",
+    "main.js": "/TeaserShot/static/js/main.56a4a698.js",
     "static/js/453.16aaffc5.chunk.js": "/TeaserShot/static/js/453.16aaffc5.chunk.js",
+    "static/media/tiredBreadMaker.png": "/TeaserShot/static/media/tiredBreadMaker.07f29ed9ace72c408f07.png",
+    "static/media/rainRemember.png": "/TeaserShot/static/media/rainRemember.ef0c83c1d02537204509.png",
     "static/media/SilentCourt.png": "/TeaserShot/static/media/SilentCourt.a2a1727f974051c520cb.png",
     "static/media/EmiTeaser.png": "/TeaserShot/static/media/EmiTeaser.09a83cbeb579cfd62d98.png",
     "static/media/InvisibleAverage.png": "/TeaserShot/static/media/InvisibleAverage.1367f10f07c86dc7f010.png",
     "static/media/SilentGlue.png": "/TeaserShot/static/media/SilentGlue.d3218af6615eb8d0622e.png",
     "static/media/AntraLogo.jpeg": "/TeaserShot/static/media/AntraLogo.434395d2343991545a0c.jpeg",
     "index.html": "/TeaserShot/index.html",
-    "main.457f63aa.css.map": "/TeaserShot/static/css/main.457f63aa.css.map",
-    "main.e8c9e641.js.map": "/TeaserShot/static/js/main.e8c9e641.js.map",
+    "main.fca4a0d6.css.map": "/TeaserShot/static/css/main.fca4a0d6.css.map",
+    "main.56a4a698.js.map": "/TeaserShot/static/js/main.56a4a698.js.map",
     "453.16aaffc5.chunk.js.map": "/TeaserShot/static/js/453.16aaffc5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.457f63aa.css",
-    "static/js/main.e8c9e641.js"
+    "static/css/main.fca4a0d6.css",
+    "static/js/main.56a4a698.js"
   ]
 }
