@@ -10,11 +10,13 @@ const ContactUs = ({ handleContactTab }) => {
   const [contactNumber, setContactNumber] = useState('')
   const [contactLinkedin, setContactLinkedin] = useState('')
   const [contactMessage, setContactMessage] = useState('')
-
+  
+  BACKEND_URL = process.env.REACT_APP_BACKEND_URL
+  
   const handleSubmit = (e) => {
     e.preventDefault()
     axios
-      .post('http://192.168.1.239:3001/Contact', {
+      .post(`${BACKEND_URL}/Contact`, {
         name: contactName,
         email: contactEmail,
         company: contactCompany,
