@@ -1,6 +1,7 @@
 :root {
     --transition-speed: 0.4s ease;
     --bg-color: #fdfdfb;
+    --contact-bg: #fdfdfb;
     --text-color: #1a1a1a;
     --primary-color: #000000;
     --accent-color: #4f46e5;
@@ -14,6 +15,7 @@
 
 [data-theme ="dark"]{
     --bg-color: #0d1117;
+    --contact-bg: #3f4247;
     --text-color: #ffffff;
     --card-color: #1a1a1a;
     --primary-color: #ffffff;
@@ -100,6 +102,12 @@ header{
   cursor: pointer;
 }
 
+.contactPage button{
+  background: none;
+  border: none;
+  font-weight: 600;
+}
+
 .theme-option{
   color: var(--accent-color);
   border-color: var(--accent-color);
@@ -126,6 +134,7 @@ body{
 
 .hero-section{
   padding: 2rem 4rem;
+  margin-top: 2rem;
 }
 
 .title{
@@ -416,7 +425,7 @@ body{
 @media screen and (max-width: 555px) {
 
   header{
-    padding: 0.5rem 3.5rem;
+    padding: 0.5rem 4.5rem;
     align-items: center;
   }
 
@@ -498,4 +507,3 @@ body{
 }
 
 
-/* Check

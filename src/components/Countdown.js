@@ -1,7 +1,7 @@
 import {useState ,useEffect} from "react"
 
 
-const COUNTDOWN_TARGET = new Date("2025-08-27T01:00:00")
+const COUNTDOWN_TARGET = new Date("2025-09-10T01:00:00")
 
 const getTimeLeft = () => {
     const totalTimeLeft = COUNTDOWN_TARGET - new Date()

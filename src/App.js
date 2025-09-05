@@ -3,12 +3,15 @@ import AntraLogo from "./components/pictures/AntraLogo.jpeg"
 import NavBar from "./components/NavBar";
 import Modal from "./components/Modal";
 import TeaserStories from "./components/TeaserStories";
+import ContactUs from "./components/ContactUs";
 import { useState } from "react";
+
 
 
 function App() {
 
   const [modalState, setModalState] = useState(false)
+  const [contactTab, setContactTab] = useState(false)
   const [theme, setTheme] = useState("light");
 
 
@@ -18,30 +21,51 @@ function App() {
     setModalState(newState)
   }
 
+  
+  const handleContactTab = () =>{
+    const newState = contactTab === false? true:false
+    setContactTab(newState)
+  }
 
   return (
     <div className="app-container" >
+
       <header>
         <div className="nav-logo">
             <img style={{width:"48px", height: "48px"}} src={AntraLogo} alt="Antra Logo"/>
             <h2 style={{fontSize: "24px"}}>AntrAI</h2>
         </div>
-         <NavBar handleModalState={handleModalState} theme ={theme} setTheme={setTheme}/>
+
+
+        <NavBar handleModalState={handleModalState} handleContactTab = {handleContactTab}  theme ={theme} setTheme={setTheme}/>
       </header>
+
+
       <main>
         <div className="hero-section">
           <Body/>
         </div>
         <div>
-        <TeaserStories theme = {theme}/>
+          <TeaserStories theme = {theme}/>
         </div>
       </main>
-      <div >
+
+      <div>
         {modalState && (
         <Modal handleModalState = {handleModalState}/>
         )}
       </div>
+
+      <div>
+        {contactTab && (
+        <ContactUs handleContactTab= {handleContactTab}/>
+        )}
+      </div>
+
+
+
     </div>
+
   );
 }
 
