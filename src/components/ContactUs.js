@@ -11,7 +11,8 @@ const ContactUs = ({ handleContactTab }) => {
   const [contactLinkedin, setContactLinkedin] = useState('')
   const [contactMessage, setContactMessage] = useState('')
   
-  const BACKEND_URL = process.env.REACT_APP_BACKEND_URL
+  BACKEND_URL = process.env.REACT_APP_API_BASE_URL
+
   
   const handleSubmit = (e) => {
     e.preventDefault()
