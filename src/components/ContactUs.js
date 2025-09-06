@@ -15,6 +15,7 @@ const ContactUs = ({ handleContactTab }) => {
 
   
   const handleSubmit = (e) => {
+    console.log("Backend URL:", process.env.REACT_APP_API_BASE_URL);
     e.preventDefault()
     axios
       .post(`${BACKEND_URL}/Contact`, {
